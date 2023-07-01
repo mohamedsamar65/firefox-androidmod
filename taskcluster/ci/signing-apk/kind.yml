@@ -31,8 +31,6 @@ task-template:
         by-tasks-for:
             (action|cron|github-release):
                 by-build-type:
-                    (focus-nightly|focus-release|klar-release|focus-beta|fenix-nightly|fenix-debug|fenix-nightly-simulation|fenix-beta|fenix-beta-mozillaonline|fenix-release|fenix-release-mozillaonline):
-                        type: signing
                     default: {}
             default: {}
     run-on-tasks-for:
