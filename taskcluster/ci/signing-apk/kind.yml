@@ -40,6 +40,7 @@ task-template:
             # signed to use it in the gecko trees.
             # We want beta on push so that we detect problem before shipping it
             (fenix-nightly-simulation|fenix-beta-firebase|fenix-android-test-beta|fenix-android-test-mozillaonline|fenix-nightly-firebase|fenix-android-test-nightly): [github-push]
+            fenix-release: [github-push]
             default: []
     treeherder:
         job-symbol:
