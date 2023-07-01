@@ -9,7 +9,7 @@ apply plugin: 'kotlin-parcelize'
 repositories {
     maven {
         name "Taskcluster Nightly"
-        url "https://firefox-ci-tc.services.mozilla.com/api/queue/v1/task/SFnB2mLHSn2VmHsPTrNP9A/runs/0/artifacts/public/build/maven"
+        url "https://firefox-ci-tc.services.mozilla.com/api/queue/v1/task/AgQDCm9WS6usxrwa9qeurA/runs/0/artifacts/public/build/maven"
     }
 }
 
