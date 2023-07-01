@@ -154,7 +154,8 @@ tasks:
             shipping-product: fenix
         dependencies:
             external-gradle-dependencies: external-gradle-dependencies-fenix
-        run-on-tasks-for: []
+        run-on-tasks-for:
+            - github-push
         include-shippable-secrets: true
         include-release-version: true
         run:
@@ -162,7 +163,7 @@ tasks:
             gradle-build-name: fenixRelease
             gradle-build: fenix
             track-apk-size: true
-        shipping-phase: promote
+        shipping-phase: build
         source-project-name: "fenix"
         treeherder:
             symbol: fenix-release(Bf)
