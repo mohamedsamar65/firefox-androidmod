@@ -48,14 +48,14 @@
     boolean FAST_SERVICE_LOADER_ENABLED return true;
 }
 
-####################################################################################################
-# Remove debug logs from release builds
-####################################################################################################
--assumenosideeffects class android.util.Log {
-    public static boolean isLoggable(java.lang.String, int);
-    public static int v(...);
-    public static int d(...);
-}
+#####################################################################################################
+## Remove debug logs from release builds
+#####################################################################################################
+#-assumenosideeffects class android.util.Log {
+#    public static boolean isLoggable(java.lang.String, int);
+#    public static int v(...);
+#    public static int d(...);
+#}
 
 ####################################################################################################
 # Mozilla Application Services

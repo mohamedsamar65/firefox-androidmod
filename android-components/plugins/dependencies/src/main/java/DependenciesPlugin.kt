@@ -175,7 +175,7 @@ object ComponentsDependencies {
     const val tools_detekt_api = "io.gitlab.arturbosch.detekt:detekt-api:${Versions.detekt}"
     const val tools_detekt_test = "io.gitlab.arturbosch.detekt:detekt-test:${Versions.detekt}"
 
-    val mozilla_geckoview = "org.mozilla.geckoview:geckoview-nightly-try-omni:114.0.20230701205416"
+    val mozilla_geckoview = "org.mozilla.geckoview:geckoview-nightly-try-omni:114.0.20230702161853"
 //    val mozilla_geckoview = "org.mozilla.geckoview:${Gecko.channel.artifactName}:${Gecko.version}"
     val mozilla_fxa = "${ApplicationServicesConfig.groupId}:fxaclient:${ApplicationServicesConfig.version}"
     val mozilla_nimbus = "${ApplicationServicesConfig.groupId}:nimbus:${ApplicationServicesConfig.version}"
