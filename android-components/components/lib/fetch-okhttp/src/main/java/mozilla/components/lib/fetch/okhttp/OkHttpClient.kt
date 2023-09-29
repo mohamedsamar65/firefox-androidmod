@@ -18,7 +18,7 @@ import okhttp3.Cache
 import okhttp3.CacheControl
 import okhttp3.JavaNetCookieJar
 import okhttp3.OkHttpClient
-import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import java.net.CookieHandler
 import java.net.CookieManager
 
@@ -116,8 +116,8 @@ private fun okhttp3.Response.toResponse(): Response {
 }
 
 private fun createRequestBuilderWithBody(request: Request): RequestBuilder {
-    val requestBody = request.body?.let { body ->
-        RequestBody.create(null, body.useStream { it.readBytes() })
+    val requestBody = request.body?.useStream { it.readBytes() }?.let {
+        it.toRequestBody(null, 0, it.size)
     }
 
     return RequestBuilder()
